@@ -1,2 +1,1 @@
-Este es el proyecto final aplicando sass, animaciones, seo, entre otras cosas. Esta pagina es para una empresa dedicada a el mantenimiento de sistemas electricos y de refrigeracions.
-Dejo los links aca: https://airlect.netlify.app/ https://ezequielspizzirri.github.io/Proyecto-Final/
+Este es el proyecto final aplicando Sass, animaciones, SEO, entre otras técnicas. Esta página está dedicada al mantenimiento de sistemas eléctricos y de refrigeración. Aquí te dejo los enlaces: https://airlect.netlify.app/ y https://ezequielspizzirri.github.io/Proyecto-Final/.
