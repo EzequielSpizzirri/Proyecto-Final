@@ -1,12 +1,23 @@
 @charset "UTF-8";
 .navbar-brand img {
-  max-height: 50px;
-  padding: 5px;
+  max-height: 30px;
+  padding: 0px;
   vertical-align: middle;
 }
 
 .navbar {
-  background-image: linear-gradient(to right, rgb(192, 43, 43), rgb(214, 190, 190));
+  background-image: linear-gradient(to right, rgb(23, 33, 161), rgb(201, 192, 192));
+}
+
+#myNavbar .nav-link {
+  color: whitesmoke;
+  transition: color 0.3s;
+}
+
+#myNavbar .nav-link:hover {
+  color: rgb(165, 165, 190);
+  transform: scale(1.1);
+  text-shadow: black;
 }
 
 nav {
@@ -58,7 +69,7 @@ main {
 }
 
 footer {
-  background-image: linear-gradient(to right, rgb(192, 43, 43), rgb(214, 190, 190));
+  background-image: linear-gradient(to right, rgb(23, 33, 161), rgb(201, 192, 192));
   text-align: center;
   padding: 0;
   z-index: 9999;
@@ -103,28 +114,27 @@ footer {
 
 .tecnico-box {
   position: absolute;
-  top: 500px;
+  top: 450px;
   left: 50%;
   transform: translateX(-50%);
   max-width: 1400px;
   width: 80%;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
   animation: fadeIn 2s ease-in-out forwards;
-  opacity: 0;
   overflow: auto;
   max-height: calc(100vh - 140px);
 }
-@media (max-width: 1200px) {
+@media (max-width: 950px) {
   .tecnico-box {
     transform: translateY(-50%);
     right: 0;
     left: 0;
-    width: 80%;
+    max-width: 60%;
     margin: auto;
-    top: 50%;
+    top: 56%;
     font-size: 16px;
   }
   .tecnico-box .tecnico-box {
@@ -149,9 +159,10 @@ footer {
   animation: fadeIn 2s ease-in-out forwards;
   opacity: 0;
 }
-@media (max-width: 1200px) {
+@media (max-width: 950px) {
   .logoinicio {
-    display: none;
+    top: 80px;
+    max-width: 100%;
   }
 }
 .logoinicio img {

@@ -1,7 +1,7 @@
 // Variables
 $primary-color: #007bff;
 $secondary-color: #6c757d;
-$bg-color1: linear-gradient(to right, rgb(192, 43, 43), rgb(214, 190, 190));
+$bg-color1: linear-gradient(to right, rgb(23, 33, 161), rgb(201, 192, 192));
 
 // Mixin para botones
 @mixin button($bg-color, $text-color) {
@@ -14,13 +14,24 @@ $bg-color1: linear-gradient(to right, rgb(192, 43, 43), rgb(214, 190, 190));
 
 // Estilos de la navbar
 .navbar-brand img {
-  max-height: 50px;
-  padding: 5px;
+  max-height: 30px;
+  padding: 0px;
   vertical-align: middle;
 }
 .navbar{
   background-image: $bg-color1;
   
+}
+
+#myNavbar .nav-link {
+  color: whitesmoke;
+  transition: color 0.3s; 
+}
+
+#myNavbar .nav-link:hover {
+  color: rgb(165, 165, 190); 
+  transform: scale(1.1);
+  text-shadow: black;
 }
 
 nav {
@@ -124,27 +135,27 @@ footer {
 
 .tecnico-box {
   position: absolute;
-  top: 500px;
+  top: 450px;
   left: 50%;
   transform: translateX(-50%);
   max-width: 1400px;
   width: 80%;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
   animation: fadeIn 2s ease-in-out forwards;
-  opacity: 0;
   overflow: auto;
   max-height: calc(100vh - 140px); 
 
-  @media (max-width: 1200px) {
+  @media (max-width: 950px) {
     transform: translateY(-50%);
     right: 0;
     left: 0;
-    width: 80%; 
+    max-width: 60%;
     margin: auto; 
-    top: 50%;
+    top: 56%;
+
     font-size: 16px;
       .tecnico-box {
         
@@ -172,8 +183,9 @@ footer {
   animation: fadeIn 2s ease-in-out forwards;
   opacity: 0; 
 
-  @media (max-width: 1200px) {
-    display: none; 
+  @media (max-width: 950px) {
+    top: 80px;
+    max-width: 100%;
   }
 
   img {
